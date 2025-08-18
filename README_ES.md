@@ -19,11 +19,17 @@ Este repositorio contiene una hoja de estilos CSS unificada que ofrece tres tema
 ## 📸 Vista Previa
 
 _Aquí puedes colocar una captura de pantalla que muestre cómo se ven los temas en tu Calibre. ¡Una imagen vale más que mil palabras!_ (Las variaciones de entre fuentes y estilo, no de colores, son muy sutiles de percibir)
+### Noche 🌓 (Tema 1: Tema 1: El Clásico Moderno)
+<img width="1507" height="1124" alt="imagen" src="https://github.com/user-attachments/assets/d760912f-6f86-48c4-9446-b3aca797d7d3" />
 
 ### Noche 🌓 (Tema 2: El Elegante Profesional)
 <img width="1501" height="1077" alt="calibre-parallel_fpHAkbftqO" src="https://github.com/user-attachments/assets/db81d5af-af1b-4afb-8c86-0239ffe2d3f0" />
 
-### Dia ☀️ (Tema 2: Tema 1: El Clásico Moderno)
+### Noche 🌓 (Tema 3: El Minimalista Cálido)
+<img width="1505" height="1120" alt="imagen" src="https://github.com/user-attachments/assets/6f925350-a506-4ddd-967d-242895cf14b9" />
+
+
+### Dia ☀️ (Tema 1: Tema 1: El Clásico Moderno)
 <img width="1497" height="1116" alt="calibre-parallel_JqLHzsCzc5" src="https://github.com/user-attachments/assets/cd1ca501-1d27-43b6-938f-6ba3ae3b8101" />
 
 ### Dia ☀️ (Tema 2: El Elegante Profesional)
@@ -55,12 +61,28 @@ Para que los temas funcionen correctamente, necesitas tener **Calibre** instalad
 
 ## 🚀 Cómo Usarlo
 
+### Opcion 1 (facil)
 1.  **Instala las fuentes** de al menos el tema que desees utilizar (aunque se recomienda instalar todas).
-2.  Descarga el archivo `calibre-viewer-themes.css` de este repositorio.
+2.  Descarga el archivo `calibre-viewer-theme-number-1` de este repositorio, y elige segun el tema que te guste.
+    - number-1 para el Tema 1: El Clásico Moderno
+    - number-2 para el Tema 2: El Elegante Profesional
+    - number-3 para el Tema 3: El Minimalista Cálido
 3.  Abre cualquier libro en el **Visor de libros electrónicos** de Calibre.
 4.  Haz clic en el icono de **Preferencias** (⚙️ o un martillo).
 5.  Ve a la pestaña **Estilos**.
-6.  Copia y pega **todo el contenido** del archivo `calibre-viewer-themes.css` en el cuadro de texto.
+6.  Copia y pega **todo el contenido** del archivo, Haz clic en Aplicar y ¡listo!, Recarga el libro y disfruta !
+
+
+
+
+### Opcion 2 (manual)
+
+1.  **Instala las fuentes** de al menos el tema que desees utilizar (aunque se recomienda instalar todas).
+2.  Descarga el archivo `calibre-viewer-themes-all-in-one.css` de este repositorio.
+3.  Abre cualquier libro en el **Visor de libros electrónicos** de Calibre.
+4.  Haz clic en el icono de **Preferencias** (⚙️ o un martillo).
+5.  Ve a la pestaña **Estilos**.
+6.  Copia y pega **todo el contenido** del archivo `calibre-viewer-themes-all-in-one.css` en el cuadro de texto.
 7.  **Activa tu tema preferido.** Al final del código, encontrarás una sección llamada `/* --- APLICACIÓN DE FUENTES POR TEMA --- */`. Para activar un tema, simplemente "descoméntalo" (borra los símbolos `/*` y `*/` que lo rodean).
 
 > **¡Importante!** Asegúrate de que solo un tema esté activo (descomentado) a la vez.
@@ -83,10 +105,10 @@ Después:
 body { font-family: var(--font-body-elegante); }
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-elegante); }
 ```
-Haz clic en Aplicar y ¡listo!
+Haz clic en Aplicar y ¡listo!, Recarga el libro y disfruta !
 
 🔧 Personalización
-Cambiar de Tema
+Cambiar de Tema (manual)
 
 Puedes cambiar de tema en cualquier momento siguiendo el paso 7 anterior. Recuerda comentar el tema antiguo antes de descomentar el nuevo.
 
