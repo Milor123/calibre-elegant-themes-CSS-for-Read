@@ -1,4 +1,6 @@
 # 🎨 Elegant CSS Themes for the Calibre Viewer
+## 🇬🇧 English | [Español 🇪🇸](README_es.md)
+
 
 Transform your Calibre reading experience! ✨
 
