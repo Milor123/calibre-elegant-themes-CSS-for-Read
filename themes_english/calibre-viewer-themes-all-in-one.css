@@ -1,0 +1,161 @@
+/* --- DESIGN AND COLOR VARIABLES --- */
+:root {
+    /* Light Color Palette */
+    --bg-light: rgb(245, 241, 233);      /* A very subtle off-white */
+    --text-light: rgb(40, 40, 40);       /* Not-so-intense black */
+    --accent-light: rgb(179, 90, 49);    /* A terracotta/burnt orange accent */
+    --meta-light: rgb(120, 120, 120);     /* Color for secondary text */
+
+    /* Dark Color Palette (according to your preference) */
+    --bg-dark: rgb(25, 25, 30);          /* Almost black dark blue, not AMOLED */
+    --text-dark: rgb(220, 215, 205);     /* Warm white, not pure */
+    --accent-dark: rgb(223, 130, 85);    /* Brighter orange accent for contrast */
+    --meta-dark: rgb(150, 150, 150);      /* Color for secondary text */
+
+    /* --- LOCAL FONT NAMES --- */
+    /* Adjust these names if your system displays them differently! */
+
+    /* Theme 1 Fonts: The Modern Classic */
+    --font-body-clasico: 'Literata', serif;
+    --font-headings-clasico: 'Inter', sans-serif;
+
+    /* Theme 2 Fonts: The Professional Elegance */
+    --font-body-elegante: 'Spectral', serif;
+    --font-headings-elegante: 'IBM Plex Sans', sans-serif;
+
+    /* Theme 3 Fonts: The Warm Minimalist */
+    --font-body-calido: 'Alegreya', serif;
+    --font-headings-calido: 'Lato', sans-serif; /* Lato often comes with Windows/Mac, but install it if not */
+}
+
+/* --- BASE STYLES (APPLY TO ALL THEMES) --- */
+
+/* Default Light Mode */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+    /* Limit text width to avoid very long lines on your 24" monitor */
+    max-width: 80ch;
+    margin: 0 auto !important; /* Center the text block */
+    padding: 3rem 4rem !important; /* Space for the text to breathe */
+}
+
+/* Override for Dark Mode */
+body.calibre-viewer-dark-colors {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Paragraphs */
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/* Drop Cap (Capital Letter) for the first paragraph after a heading */
+h1 + p:first-letter,
+h2 + p:first-letter {
+    float: left;
+    font-size: 4.5em;
+    line-height: 0.8;
+    margin-right: 0.05em;
+    margin-top: 0.05em;
+    font-weight: bold;
+    color: var(--accent-light);
+}
+body.calibre-viewer-dark-colors h1 + p:first-letter,
+body.calibre-viewer-dark-colors h2 + p:first-letter {
+    color: var(--accent-dark);
+}
+
+
+/* Titles and Headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    text-align: left;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    color: var(--accent-light);
+}
+
+body.calibre-viewer-dark-colors h1,
+body.calibre-viewer-dark-colors h2,
+body.calibre-viewer-dark-colors h3,
+body.calibre-viewer-dark-colors h4,
+body.calibre-viewer-dark-colors h5,
+body.calibre-viewer-dark-colors h6 {
+    color: var(--accent-dark);
+}
+
+h1 { font-size: 2.2em; text-align: center; }
+h2 { font-size: 1.8em; border-bottom: 1px solid var(--meta-light); padding-bottom: 0.3em;}
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; font-style: italic; }
+
+body.calibre-viewer-dark-colors h2 {
+    border-bottom-color: var(--meta-dark);
+}
+
+/* Quotes and Text Blocks */
+blockquote {
+    border-left: 3px solid var(--accent-light);
+    padding-left: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-style: italic;
+    color: var(--meta-light);
+}
+body.calibre-viewer-dark-colors blockquote {
+    border-left-color: var(--accent-dark);
+    color: var(--meta-dark);
+}
+
+/* Lists (Bulleted and Numbered) */
+ul, ol {
+    padding-left: 2em;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--meta-light), rgba(0, 0, 0, 0));
+    margin: 3em 0;
+}
+body.calibre-viewer-dark-colors hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--meta-dark), rgba(0, 0, 0, 0));
+}
+
+/* Bold and Italic */
+strong, b {
+    font-weight: 700;
+}
+em, i {
+    font-style: italic;
+}
+
+/* --- FONT APPLICATION BY THEME --- */
+/*
+ *  Uncomment the block corresponding to the theme you want to activate.
+ *  Make sure only one is active!
+ */
+
+/* THEME 1: THE MODERN CLASSIC */
+/*
+body { font-family: var(--font-body-clasico); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-clasico); }
+*/
+
+/* THEME 2: THE PROFESSIONAL ELEGANCE */
+/*
+body { font-family: var(--font-body-elegante); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-elegante); }
+*/
+
+/* THEME 3: THE WARM MINIMALIST (Active by default) */
+/*
+body { font-family: var(--font-body-calido); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-calido); }*/

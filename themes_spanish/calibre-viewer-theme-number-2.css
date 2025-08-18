@@ -1,0 +1,161 @@
+/* --- VARIABLES DE DISEÑO Y COLORES --- */
+:root {
+    /* Paleta de Colores Claros */
+    --bg-light: rgb(245, 241, 233);      /* Un blanco hueso muy sutil */
+    --text-light: rgb(40, 40, 40);       /* Negro no tan intenso */
+    --accent-light: rgb(179, 90, 49);    /* Un acento terracota/naranja quemado */
+    --meta-light: rgb(120, 120, 120);     /* Color para texto secundario */
+
+    /* Paleta de Colores Oscuros (según tu preferencia) */
+    --bg-dark: rgb(25, 25, 30);          /* Azul oscuro casi negro, no AMOLED */
+    --text-dark: rgb(220, 215, 205);     /* Blanco cálido, no puro */
+    --accent-dark: rgb(223, 130, 85);    /* Acento naranja más brillante para contraste */
+    --meta-dark: rgb(150, 150, 150);      /* Color para texto secundario */
+
+    /* --- NOMBRES DE LAS FUENTES LOCALES --- */
+    /* ¡Ajusta estos nombres si tu sistema los muestra diferente! */
+
+    /* Fuentes Tema 1: El Clásico Moderno */
+    --font-body-clasico: 'Literata', serif;
+    --font-headings-clasico: 'Inter', sans-serif;
+
+    /* Fuentes Tema 2: El Elegante Profesional */
+    --font-body-elegante: 'Spectral', serif;
+    --font-headings-elegante: 'IBM Plex Sans', sans-serif;
+
+    /* Fuentes Tema 3: El Minimalista Cálido */
+    --font-body-calido: 'Alegreya', serif;
+    --font-headings-calido: 'Lato', sans-serif; /* Lato suele venir con Windows/Mac, pero si no, instálala */
+}
+
+/* --- ESTILOS BASE (APLICAN A TODOS LOS TEMAS) --- */
+
+/* Modo Claro por defecto */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+    /* Limita el ancho del texto para no tener líneas larguísimas en tu monitor de 24" */
+    max-width: 80ch;
+    margin: 0 auto !important; /* Centra el bloque de texto */
+    padding: 3rem 4rem !important; /* Espacio para que el texto respire */
+}
+
+/* Anulación para el Modo Oscuro */
+body.calibre-viewer-dark-colors {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Párrafos */
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/* Capital (Letra Capitular) para el primer párrafo después de un título */
+h1 + p:first-letter,
+h2 + p:first-letter {
+    float: left;
+    font-size: 4.5em;
+    line-height: 0.8;
+    margin-right: 0.05em;
+    margin-top: 0.05em;
+    font-weight: bold;
+    color: var(--accent-light);
+}
+body.calibre-viewer-dark-colors h1 + p:first-letter,
+body.calibre-viewer-dark-colors h2 + p:first-letter {
+    color: var(--accent-dark);
+}
+
+
+/* Títulos y Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    text-align: left;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    color: var(--accent-light);
+}
+
+body.calibre-viewer-dark-colors h1,
+body.calibre-viewer-dark-colors h2,
+body.calibre-viewer-dark-colors h3,
+body.calibre-viewer-dark-colors h4,
+body.calibre-viewer-dark-colors h5,
+body.calibre-viewer-dark-colors h6 {
+    color: var(--accent-dark);
+}
+
+h1 { font-size: 2.2em; text-align: center; }
+h2 { font-size: 1.8em; border-bottom: 1px solid var(--meta-light); padding-bottom: 0.3em;}
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; font-style: italic; }
+
+body.calibre-viewer-dark-colors h2 {
+    border-bottom-color: var(--meta-dark);
+}
+
+/* Citas y Bloques de Texto */
+blockquote {
+    border-left: 3px solid var(--accent-light);
+    padding-left: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-style: italic;
+    color: var(--meta-light);
+}
+body.calibre-viewer-dark-colors blockquote {
+    border-left-color: var(--accent-dark);
+    color: var(--meta-dark);
+}
+
+/* Listas (Viñetas y Numeradas) */
+ul, ol {
+    padding-left: 2em;
+}
+
+/* Línea Horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--meta-light), rgba(0, 0, 0, 0));
+    margin: 3em 0;
+}
+body.calibre-viewer-dark-colors hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--meta-dark), rgba(0, 0, 0, 0));
+}
+
+/* Negrita y Cursiva */
+strong, b {
+    font-weight: 700;
+}
+em, i {
+    font-style: italic;
+}
+
+/* --- APLICACIÓN DE FUENTES POR TEMA --- */
+/*
+ *  Descomenta el bloque que corresponda al tema que quieres activar.
+ *  ¡Asegúrate de que solo uno esté activo!
+ */
+
+/* TEMA 1: EL CLÁSICO MODERNO */
+/*
+body { font-family: var(--font-body-clasico); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-clasico); }
+*/
+
+/* TEMA 2: EL ELEGANTE PROFESIONAL */
+/* Status: Enabled */
+body { font-family: var(--font-body-elegante); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-elegante); }
+
+
+/* TEMA 3: EL MINIMALISTA CÁLIDO (Activo por defecto) */
+/*
+body { font-family: var(--font-body-calido); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings-calido); }*/
