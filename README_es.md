@@ -1,5 +1,7 @@
 # 🎨 Temas CSS Elegantes para el Visor de Calibre
 
+## [🇬🇧 English](README.md) | 🇪🇸 Español
+
 ¡Transforma tu experiencia de lectura en Calibre! ✨
 
 Este repositorio contiene una hoja de estilos CSS unificada que ofrece tres temas estéticos y elegantes para el visor de libros electrónicos de Calibre. Diseñados para ser agradables a la vista, modernos y altamente legibles, especialmente en monitores de alta resolución.
