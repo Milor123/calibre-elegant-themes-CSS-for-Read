@@ -40,6 +40,9 @@ _Here you can place a screenshot showcasing how the themes look in your Calibre.
 ### Day ☀️ (Theme 3: Warm Minimalist)
 <img width="1515" height="1127" alt="image" src="https://github.com/user-attachments/assets/1021327c-bc27-4fe6-b4c6-2c0caeb2d604" />
 
+### Visual Comparison
+<img width="1200" height="534" alt="image" src="https://github.com/user-attachments/assets/61b53f79-33e4-4800-ad3d-7dc0784b9def" />
+
 
 ---
 
