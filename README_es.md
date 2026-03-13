@@ -40,6 +40,10 @@ _Aquí puedes colocar una captura de pantalla que muestre cómo se ven los temas
 ### Dia ☀️ (Tema 3: El Minimalista Cálido)
 <img width="1515" height="1127" alt="imagen" src="https://github.com/user-attachments/assets/1021327c-bc27-4fe6-b4c6-2c0caeb2d604" />
 
+### Comparación visual
+<img width="1199" height="534" alt="image" src="https://github.com/user-attachments/assets/6a63ba5c-32ac-4165-ac55-e0cad8cec6c8" />
+
+
 
 ---
 
